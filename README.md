@@ -31,6 +31,7 @@ Now you can visit [http://localhost:8000/](http://localhost:8000/) in your brows
  * [View](https://github.com/mattstauffer/Torch/tree/master/components/view)
  * [Pagination](https://github.com/mattstauffer/Torch/tree/master/components/pagination)
  * [Log](https://github.com/mattstauffer/Torch/tree/master/components/log)
+ * [Middleware](https://github.com/mattstauffer/Torch/tree/master/components/middleware)
 
 ### In Progress
  * [Mail](https://github.com/mattstauffer/Torch/tree/master/components/mail) - Imported from 4.2 but needs to be tested/tweaked
@@ -39,8 +40,12 @@ Now you can visit [http://localhost:8000/](http://localhost:8000/) in your brows
 ### Planned
  * Artisan - [Work In Progress PR](https://github.com/mattstauffer/Torch/pull/22)
  * Logging & Errors
- * Middleware
  * More?
+
+## Other Packages
+
+### Done
+ * [LaravelCollective/html](https://github.com/mattstauffer/Torch/tree/master/other-components/html)
 
 ## Contributing
 A few important notes:
@@ -55,4 +60,4 @@ The [4.2](https://github.com/mattstauffer/torch/tree/4.2) branch is still going 
 At this point, most contributions could be just copying the 4.2 component over, adding `composer.json`, tweaking the old code for the new folder structure, and making sure our old code still works.
 
 ## But my framework doesn't use Symfony's HttpFoundation!
-That's hard, unfortunately. If you're using CodeIgniter, and it's a new project, honestly, it's time to upgrade frameworks. `¯\(°_o)/¯` But if it's a pre-existing project, and we all have those, the majority of the 4.2 components will still work with CodeIgniter and other older projects.
+Many of these components will still work. But a few of them require HttpFoundation. `¯\(°_o)/¯`
